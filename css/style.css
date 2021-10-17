@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(37, 19, 66, 0.6);
+  color: #f5ced9;
+}
+
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background: #d07b95;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9c416e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #622a55;
+}
+
+h1 {
+  margin: 0;
+  text-shadow: -1px 1px 13px rgba(208, 123, 149, 0.3);
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  color: #f5ced9;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Varela Round", sans-serif;
+  color: #f5ced9;
+}
+
+h4 {
+  padding: 0 2em 0 2em;
+}
+
+/*---------------------------- NAVIGATION -----------------------------*/
+@media all and (min-width: 720px) {
+  .sidebar {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 5em;
+    position: fixed;
+    background: url("/images/menu.png");
+    background-color: #f5ced9;
+    background-size: 200%;
+    z-index: 99;
+  }
+
+  .menu {
+    display: flex;
+    margin-block-end: 0;
+    align-items: center;
+    margin-block-start: 0;
+    margin-inline-end: 0px;
+    flex-direction: column;
+    padding-inline-start: 0;
+    margin-inline-start: -0.3em;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .menu-btn {
+    width: 5em;
+    height: 5em;
+    list-style: none;
+    position: relative;
+    font-size: large;
+  }
+
+  .menu-btn:hover {
+    background-color: #622a55;
+  }
+
+  .menu-link {
+    padding: 2em;
+    display: flex;
+    color: #622a55;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+  }
+
+  .menu-link:hover {
+    color: #f5ced9;
+  }
+
+  .menu-link .menu-txt {
+    top: 0;
+    left: 0%;
+    bottom: 0%;
+    width: 8em;
+    opacity: 0;
+    z-index: 1;
+    padding: 2em 0;
+    text-align: left;
+    color: #f5ced9;
+    margin: 0 0 0 5em;
+    visibility: hidden;
+    position: absolute;
+    background-color: #622a55;
+    font-family: "Varela Round", sans-serif;
+  }
+
+  .menu-link:hover .menu-txt {
+    opacity: 1;
+    visibility: visible;
+    -webkit-animation: left-right 0.2s both;
+    animation: left-right 0.2s both;
+  } 
+}
+
+/*------------------------------ CONTENT ------------------------------*/
+.cover {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-pad {
+  padding: 10% 20%;
+}
+
+.center {
+  transform: translate(-50%, -50%);
+  margin-right: -50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding-top: 2%;
+}
+
+.topic {
+  font-family: "Kaushan Script", cursive;
+  color: #f5ced9;
+}
+
+/*===== HOME =====*/
+.home {
+  background-image: linear-gradient(rgba(37, 19, 66, 0.5), rgba(0, 0, 0, 0.9)),
+    url("/images/1.jason-briscoe-VBsG1VOgLIU-unsplash.jpg");
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 10%;
+  height: auto;
+  width: 12em;
+  aspect-ratio: 1.06 !important;
+}
+
+.large-txt {
+  text-shadow: -1px 1px 10px rgba(37, 19, 66, 1);
+  font-family: "Kaushan Script", cursive;
+  white-space: nowrap;
+  text-align: center;
+  color: #f5ced9;
+  font-size: 5em;
+}
+
+/*=== ABOUT ME ===*/
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("/images/2.element5-digital-RPjyNMHDrFY-unsplash.jpg");
+  content: "";
+  clear: both;
+  display: table;
+  width: auto;
+  padding: 10% 20%;
+  height: 100% auto;
+  font-size: larger;
+}
+
+.about-img {
+  margin: 0.5em 1.5em 1em 0;
+  max-width: 15em;
+  max-height: 17em;
+  width: auto;
+  height: auto;
+  border-radius: 2%;
+  float: left;
+}
+
+.about-a {
+  font-family: "Varela Round", sans-serif;
+  color: #f5ced9;
+  font-size: 1em;
+  text-align: left;
+}
+
+/*==== RECIPE ====*/
+.recipes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url("/images/3.nrd-D6Tu_L3chLE-unsplash.jpg");
+  display: table;
+  font-size: larger;
+}
+
+.book {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formula {
+  margin: 10px;
+  flex: 35%;
+  max-width: 35%;
+}
+
+.formula section {
+  background-image: linear-gradient(
+      0deg,
+      rgba(242, 242, 242, 1) 20%,
+      rgba(242, 242, 242, 1) 78%,
+      rgba(0, 0, 0, 0) 80%
+    ),
+    url("/images/recipe.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 10px #622a55;
+  border: 0;
+  margin-top: 1em;
+  padding-top: 2em;
+  width: 100%;
+  font-size: larger;
+  color: #622a55;
+}
+
+.recipe-txt {
+  font-family: "Caveat", cursive;
+  list-style-position: inside;
+  list-style-type: circle;
+  padding: 2em;
+  font-size: smaller;
+  text-align: left;
+}
+
+/*==== SOCIAL ====*/
+.socials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(37, 19, 66, 0.8)),
+    url("/images/4.eaters-collective-i_xVfNtQjwI-unsplash.jpg");
+  display: table;
+  height: 69% !important;
+  padding-top: 5em;
+}
+
+.contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4em;
+}
+.me {
+  width: 3em;
+  height: 3em;
+  background: #622a55;
+  margin: 1.5em;
+  color: #f5ced9;
+  position: relative;
+  overflow: hidden;
+  padding: 2em 1em 0 1em;
+  font-size: large;
+  text-decoration: none;
+}
+
+.me:hover {
+  background-color: #f5ced9;
+  color: #622a55;
+  transition: 1s;
+}
+
+.copyright {
+  width: 100%;
+  background: linear-gradient(rgba(37, 19, 66, 0.8), rgba(0, 0, 0, 0.9)),
+    rgb(156, 65, 110, 0.6);
+  color: #f5ced9;
+  height: 6em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.copyright p {
+  padding: 0 0 1em 0;
+  color: #9c416e;
+}
+
+.copyright a {
+  color: #f5ced9;
+}
+
+/*--------------------------- SMALL SCREEN  ---------------------------*/
+@media all and (max-width: 720px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5em;
+    background: url("../images/menu.png");
+    background-color: #f5ced9;
+    background-size: 100%;
+    z-index: 99;
+  }
+
+  .menu {
+    display: flex;
+    margin-block-end: 0;
+    align-items: center;
+    margin-block-start: 0;
+    margin-inline-end: 0px;
+    flex-direction: row;
+    padding-inline-start: 0;
+    margin-inline-start: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .menu-btn {
+    width: 6em auto;
+    height: auto;
+    list-style: none;
+    position: relative;
+  }
+
+  .menu-btn:hover {
+    background-color: #622a55;
+  }
+
+  .menu-link {
+    padding: 2em;
+    display: flex;
+    color: #622a55;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+  }
+
+  .menu-link:hover {
+    color: #f5ced9;
+  }
+
+  .menu-link .menu-txt {
+    z-index: 1;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 5em 0 0 0 !important;
+    font-size: 0.6em;
+    text-align: center;
+    color: #f5ced9;
+    visibility: hidden;
+    font-family: "Varela Round", sans-serif;
+  }
+
+  .menu-link:hover .menu-txt {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .cover {
+    background-repeat: no-repeat;
+    height: 110%;
+  }
+
+  .logo {
+    padding: 30%;
+    height: auto;
+    width: 8em;
+    aspect-ratio: 1.06;
+  }
+
+  .large-txt {
+    font-size: 2.5em;
+  }
+
+  .about {
+    padding: 10% 10%;
+  }
+
+  .topic {
+    font-family: "Kaushan Script", cursive;
+    color: #f5ced9;
+    font-size: 1.5em;
+  }
+
+  .about-img {
+    margin: 1em 1.5em 3em 1em;
+  }
+
+  .about-a {
+    text-align: justify;
+  }
+
+  .formula {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+    margin: 0 0 5em 0.7em;
+  }
+
+  .me {
+    width: 9em;
+    height: 3em;
+    margin: 0.5em;
+    font-size: 28px;
+    text-decoration: none;
+  }
+
+  .copyright {
+    height: 12em;
+  }
+}
+
+
+/*---------------------------- ANIMATIONS  ----------------------------*/
+@-webkit-keyframes left-right {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes left-right {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
