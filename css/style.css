@@ -59,7 +59,7 @@ h4 {
     bottom: 0;
     width: 5em;
     position: fixed;
-    background: url("/images/menu.png");
+    background: url("./images/menu.png");
     background-color: #f5ced9;
     background-size: 200%;
     z-index: 99;
@@ -162,7 +162,7 @@ h4 {
 /*===== HOME =====*/
 .home {
   background-image: linear-gradient(rgba(37, 19, 66, 0.5), rgba(0, 0, 0, 0.9)),
-    url("/images/1.jason-briscoe-VBsG1VOgLIU-unsplash.jpg");
+    url("./images/1.jason-briscoe-VBsG1VOgLIU-unsplash.jpg");
 }
 
 .logo {
@@ -187,7 +187,7 @@ h4 {
 /*=== ABOUT ME ===*/
 .about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url("/images/2.element5-digital-RPjyNMHDrFY-unsplash.jpg");
+    url("./images/2.element5-digital-RPjyNMHDrFY-unsplash.jpg");
   content: "";
   clear: both;
   display: table;
@@ -217,7 +217,7 @@ h4 {
 /*==== RECIPE ====*/
 .recipes {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url("/images/3.nrd-D6Tu_L3chLE-unsplash.jpg");
+    url("./images/3.nrd-D6Tu_L3chLE-unsplash.jpg");
   display: table;
   font-size: larger;
 }
@@ -242,7 +242,7 @@ h4 {
       rgba(242, 242, 242, 1) 78%,
       rgba(0, 0, 0, 0) 80%
     ),
-    url("/images/recipe.png");
+    url("./images/recipe.png");
   background-color: rgba(0, 0, 0, 0);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -267,7 +267,7 @@ h4 {
 /*==== SOCIAL ====*/
 .socials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(37, 19, 66, 0.8)),
-    url("/images/4.eaters-collective-i_xVfNtQjwI-unsplash.jpg");
+    url("./images/4.eaters-collective-i_xVfNtQjwI-unsplash.jpg");
   display: table;
   height: 69% !important;
   padding-top: 5em;
